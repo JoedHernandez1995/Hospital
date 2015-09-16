@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nurse:</strong>
+  <%= @nurse.nurse_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @nurse.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @nurse.lastname %>
+</p>
+
+<p>
+  <strong>Undergraduate university:</strong>
+  <%= @nurse.undergraduate_university %>
+</p>
+
+<p>
+  <strong>Hourly wage:</strong>
+  <%= @nurse.hourly_wage %>
+</p>
+
+<%= link_to 'Edit', edit_nurse_path(@nurse) %> |
+<%= link_to 'Back', nurses_path %>
