@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Bill number:</strong>
+  <%= @bill.bill_number %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @bill.patient %>
+</p>
+
+<p>
+  <strong>Issue date:</strong>
+  <%= @bill.issue_date %>
+</p>
+
+<p>
+  <strong>Hospitalization:</strong>
+  <%= @bill.hospitalization %>
+</p>
+
+<p>
+  <strong>Blood test:</strong>
+  <%= @bill.blood_test %>
+</p>
+
+<p>
+  <strong>Doctor fees:</strong>
+  <%= @bill.doctor_fees %>
+</p>
+
+<p>
+  <strong>Blood chemistry test:</strong>
+  <%= @bill.blood_chemistry_test %>
+</p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @bill.total %>
+</p>
+
+<%= link_to 'Edit', edit_bill_path(@bill) %> |
+<%= link_to 'Back', bills_path %>

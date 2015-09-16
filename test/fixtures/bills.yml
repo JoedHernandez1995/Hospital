@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bill_number: 1
+  patient_id: 
+  issue_date: 2015-09-15
+  hospitalization: 1.5
+  blood_test: 1.5
+  doctor_fees: 1.5
+  blood_chemistry_test: 1.5
+  total: 1.5
+
+two:
+  bill_number: 1
+  patient_id: 
+  issue_date: 2015-09-15
+  hospitalization: 1.5
+  blood_test: 1.5
+  doctor_fees: 1.5
+  blood_chemistry_test: 1.5
+  total: 1.5
