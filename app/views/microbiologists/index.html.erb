@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Microbiologists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Microbiologist</th>
+      <th>Name</th>
+      <th>Lastname</th>
+      <th>Birth date</th>
+      <th>Undergraduate university</th>
+      <th>Postgraduate university</th>
+      <th>Postgraduate major</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @microbiologists.each do |microbiologist| %>
+      <tr>
+        <td><%= microbiologist.microbiologist_id %></td>
+        <td><%= microbiologist.name %></td>
+        <td><%= microbiologist.lastname %></td>
+        <td><%= microbiologist.birth_date %></td>
+        <td><%= microbiologist.undergraduate_university %></td>
+        <td><%= microbiologist.postgraduate_university %></td>
+        <td><%= microbiologist.postgraduate_major %></td>
+        <td><%= link_to 'Show', microbiologist %></td>
+        <td><%= link_to 'Edit', edit_microbiologist_path(microbiologist) %></td>
+        <td><%= link_to 'Destroy', microbiologist, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Microbiologist', new_microbiologist_path %>

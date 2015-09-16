@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Main symptom:</strong>
+  <%= @illness.main_symptom %>
+</p>
+
+<p>
+  <strong>Initial date:</strong>
+  <%= @illness.initial_date %>
+</p>
+
+<p>
+  <strong>Pain soother:</strong>
+  <%= @illness.pain_soother %>
+</p>
+
+<p>
+  <strong>Pain intensifier:</strong>
+  <%= @illness.pain_intensifier %>
+</p>
+
+<p>
+  <strong>Peek hour:</strong>
+  <%= @illness.peek_hour %>
+</p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @illness.patient %>
+</p>
+
+<p>
+  <strong>Hospitalization:</strong>
+  <%= @illness.hospitalization %>
+</p>
+
+<p>
+  <strong>Visit:</strong>
+  <%= @illness.visit %>
+</p>
+
+<%= link_to 'Edit', edit_illness_path(@illness) %> |
+<%= link_to 'Back', illnesses_path %>

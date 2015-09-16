@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  resources :bills
+  resources :illnesses
+  resources :hospitalizations
+  resources :visits
+  resources :blood_chemistry_tests
+  resources :blood_tests
+  resources :microbiologists
+  resources :nurses
+  resources :doctors
+  resources :patients
   devise_for :admins
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.

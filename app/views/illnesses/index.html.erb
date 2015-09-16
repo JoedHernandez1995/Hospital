@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Illnesses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Main symptom</th>
+      <th>Initial date</th>
+      <th>Pain soother</th>
+      <th>Pain intensifier</th>
+      <th>Peek hour</th>
+      <th>Patient</th>
+      <th>Hospitalization</th>
+      <th>Visit</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @illnesses.each do |illness| %>
+      <tr>
+        <td><%= illness.main_symptom %></td>
+        <td><%= illness.initial_date %></td>
+        <td><%= illness.pain_soother %></td>
+        <td><%= illness.pain_intensifier %></td>
+        <td><%= illness.peek_hour %></td>
+        <td><%= illness.patient %></td>
+        <td><%= illness.hospitalization %></td>
+        <td><%= illness.visit %></td>
+        <td><%= link_to 'Show', illness %></td>
+        <td><%= link_to 'Edit', edit_illness_path(illness) %></td>
+        <td><%= link_to 'Destroy', illness, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Illness', new_illness_path %>
