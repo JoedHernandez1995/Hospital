@@ -1,0 +1,79 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Patient:</strong>
+  <%= @patient.patient_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @patient.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @patient.lastname %>
+</p>
+
+<p>
+  <strong>Registry date:</strong>
+  <%= @patient.registry_date %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @patient.address %>
+</p>
+
+<p>
+  <strong>Blood type:</strong>
+  <%= @patient.blood_type %>
+</p>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @patient.sex %>
+</p>
+
+<p>
+  <strong>Marital status:</strong>
+  <%= @patient.marital_status %>
+</p>
+
+<p>
+  <strong>Birth date:</strong>
+  <%= @patient.birth_date %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @patient.phone_number %>
+</p>
+
+<p>
+  <strong>Cellphone number:</strong>
+  <%= @patient.cellphone_number %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @patient.email %>
+</p>
+
+<p>
+  <strong>Emergency contact:</strong>
+  <%= @patient.emergency_contact %>
+</p>
+
+<p>
+  <strong>Occupation:</strong>
+  <%= @patient.occupation %>
+</p>
+
+<p>
+  <strong>Allergies:</strong>
+  <%= @patient.allergies %>
+</p>
+
+<%= link_to 'Edit', edit_patient_path(@patient) %> |
+<%= link_to 'Back', patients_path %>
