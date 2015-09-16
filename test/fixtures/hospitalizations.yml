@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  days_hospitalized: 1
+  room_number: 1
+  admission_date: 2015-09-15
+  doctor_id: 
+  cost: 1.5
+
+two:
+  days_hospitalized: 1
+  room_number: 1
+  admission_date: 2015-09-15
+  doctor_id: 
+  cost: 1.5

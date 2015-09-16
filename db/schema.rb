@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150916050526) do
+ActiveRecord::Schema.define(version: 20150916050826) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -94,6 +94,18 @@ ActiveRecord::Schema.define(version: 20150916050526) do
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
+
+  create_table "hospitalizations", force: :cascade do |t|
+    t.integer  "days_hospitalized"
+    t.integer  "room_number"
+    t.date     "admission_date"
+    t.integer  "doctor_id"
+    t.float    "cost"
+    t.datetime "created_at",        null: false
+    t.datetime "updated_at",        null: false
+  end
+
+  add_index "hospitalizations", ["doctor_id"], name: "index_hospitalizations_on_doctor_id"
 
   create_table "microbiologists", force: :cascade do |t|
     t.string   "microbiologist_id"
