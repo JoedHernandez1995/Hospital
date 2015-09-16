@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150916050826) do
+ActiveRecord::Schema.define(version: 20150916051117) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -106,6 +106,23 @@ ActiveRecord::Schema.define(version: 20150916050826) do
   end
 
   add_index "hospitalizations", ["doctor_id"], name: "index_hospitalizations_on_doctor_id"
+
+  create_table "illnesses", force: :cascade do |t|
+    t.string   "main_symptom"
+    t.date     "initial_date"
+    t.string   "pain_soother"
+    t.string   "pain_intensifier"
+    t.time     "peek_hour"
+    t.integer  "patient_id"
+    t.integer  "hospitalization_id"
+    t.integer  "visit_id"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
+  end
+
+  add_index "illnesses", ["hospitalization_id"], name: "index_illnesses_on_hospitalization_id"
+  add_index "illnesses", ["patient_id"], name: "index_illnesses_on_patient_id"
+  add_index "illnesses", ["visit_id"], name: "index_illnesses_on_visit_id"
 
   create_table "microbiologists", force: :cascade do |t|
     t.string   "microbiologist_id"

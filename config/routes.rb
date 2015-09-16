@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :illnesses
   resources :hospitalizations
   resources :visits
   resources :blood_chemistry_tests

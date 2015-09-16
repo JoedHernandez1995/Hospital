@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  main_symptom: MyString
+  initial_date: 2015-09-15
+  pain_soother: MyString
+  pain_intensifier: MyString
+  peek_hour: 2015-09-15 23:11:17
+  patient_id: 
+  hospitalization_id: 
+  visit_id: 
+
+two:
+  main_symptom: MyString
+  initial_date: 2015-09-15
+  pain_soother: MyString
+  pain_intensifier: MyString
+  peek_hour: 2015-09-15 23:11:17
+  patient_id: 
+  hospitalization_id: 
+  visit_id: 
