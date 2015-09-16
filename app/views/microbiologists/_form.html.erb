@@ -1,0 +1,45 @@
+<%= form_for(@microbiologist) do |f| %>
+  <% if @microbiologist.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@microbiologist.errors.count, "error") %> prohibited this microbiologist from being saved:</h2>
+
+      <ul>
+      <% @microbiologist.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :microbiologist_id %><br>
+    <%= f.text_field :microbiologist_id %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_date %><br>
+    <%= f.date_select :birth_date %>
+  </div>
+  <div class="field">
+    <%= f.label :undergraduate_university %><br>
+    <%= f.text_field :undergraduate_university %>
+  </div>
+  <div class="field">
+    <%= f.label :postgraduate_university %><br>
+    <%= f.text_field :postgraduate_university %>
+  </div>
+  <div class="field">
+    <%= f.label :postgraduate_major %><br>
+    <%= f.text_field :postgraduate_major %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

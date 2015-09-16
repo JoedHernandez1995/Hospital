@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  examination_date: 2015-09-15
+  rbc: 1.5
+  hemoglobin: 1.5
+  vcm: 1.5
+  hcm: 1.5
+  lymphocytes: 1.5
+  leukocytes: 1.5
+  neutrophils: 1.5
+  eosinophils: 1.5
+  platelets: 1.5
+  vsg: 1.5
+  patient_id: 
+  microbiologist_id: 
+  exam_cost: 1.5
+
+two:
+  examination_date: 2015-09-15
+  rbc: 1.5
+  hemoglobin: 1.5
+  vcm: 1.5
+  hcm: 1.5
+  lymphocytes: 1.5
+  leukocytes: 1.5
+  neutrophils: 1.5
+  eosinophils: 1.5
+  platelets: 1.5
+  vsg: 1.5
+  patient_id: 
+  microbiologist_id: 
+  exam_cost: 1.5

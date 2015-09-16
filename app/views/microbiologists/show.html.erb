@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Microbiologist:</strong>
+  <%= @microbiologist.microbiologist_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @microbiologist.name %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @microbiologist.lastname %>
+</p>
+
+<p>
+  <strong>Birth date:</strong>
+  <%= @microbiologist.birth_date %>
+</p>
+
+<p>
+  <strong>Undergraduate university:</strong>
+  <%= @microbiologist.undergraduate_university %>
+</p>
+
+<p>
+  <strong>Postgraduate university:</strong>
+  <%= @microbiologist.postgraduate_university %>
+</p>
+
+<p>
+  <strong>Postgraduate major:</strong>
+  <%= @microbiologist.postgraduate_major %>
+</p>
+
+<%= link_to 'Edit', edit_microbiologist_path(@microbiologist) %> |
+<%= link_to 'Back', microbiologists_path %>
