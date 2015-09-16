@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doctor_id: MyString
+  name: MyString
+  lastname: MyString
+  specialty: MyString
+  undergraduate_university: MyString
+  specialty_university: MyString
+  birth_date: 2015-09-15
+  email: MyString
+  visit_cost: 1.5
+
+two:
+  doctor_id: MyString
+  name: MyString
+  lastname: MyString
+  specialty: MyString
+  undergraduate_university: MyString
+  specialty_university: MyString
+  birth_date: 2015-09-15
+  email: MyString
+  visit_cost: 1.5
